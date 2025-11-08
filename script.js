@@ -52,7 +52,6 @@ const sections = [
 
     toggleButtons.forEach(button => {
       button.addEventListener('click', () => {
-
         const description = button.nextElementSibling;
         const isVisible = description.style.display === "block";
         description.style.display = isVisible ? 'none' : 'block';

@@ -119,14 +119,14 @@ img.zoom:hover {
 #projects * {
     color: inherit;
 }
-
+#work_experience section{
+    width: 50%;
+    max-width: 100px;
+}
 #work_experience{
-    display: grid;
+    display: block;
     justify-content: center;
     color: hsl(300, 20%, 96%);
-}
-#work_experience section{
-    width: 120%;
 }
 .company-logo {
     width: 80px;        
@@ -333,14 +333,18 @@ img.zoom:hover {
 .timeline-section {
     background-color: #0d1117;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
 }
   
 .timeline {
     position: relative;
     width: 100%;
-    max-width: 900;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 4rem ;
+    padding: 4rem 0;
 }
   
   .timeline::after {
@@ -359,7 +363,7 @@ img.zoom:hover {
     border-radius: 10rem;
     padding: 1rem 1rem;
     position: relative;
-    width: 80%;
+    width: 70%;
     box-sizing: border-box;
     color: #ffffff;
   }
@@ -369,7 +373,7 @@ img.zoom:hover {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
   }
   .timeline-item.left {
-    left: -30%;
+    left: -20%;
     text-align: right;
     padding-right: 3rem;
     border-radius: 10%;
