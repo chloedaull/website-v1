@@ -310,6 +310,7 @@ img.zoom:hover {
 .description {
     display: none;
     transition: all 0.3s ease;
+    text-align: center;
 }
 .timeline-section {
     background-color: #0d1117;
