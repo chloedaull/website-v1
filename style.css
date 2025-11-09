@@ -307,6 +307,10 @@ img.zoom:hover {
     background-color: #143f43;
     transform: scale(1.1);
 }
+.description {
+    display: none;
+    transition: all 0.3s ease;
+}
 .timeline-section {
     background-color: #0d1117;
     display: flex;
