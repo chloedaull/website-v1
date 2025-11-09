@@ -15,15 +15,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-.job-info {
-    display: flex;
-    gap: 0.5rem;
-    align-items: baseline;
-}
-.job-location {
-    font-size: 0.8rem;
-    color: gray;
-}
 .lang-toggle {
     position: fixed;
     top: 1rem;
@@ -136,10 +127,6 @@ img.zoom:hover {
     margin-right: auto;
     filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.4));
 }
-.grid {
-    display: grid;
-    row-gap: 1rem;
-}
 .hero-center {
     position: relative;
     width: 350px;
@@ -159,10 +146,6 @@ img.zoom:hover {
 .projects-section {
     text-align: center;
 }
-.education-section {
-    text-align: center;
-    color: white;
-}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -175,14 +158,14 @@ img.zoom:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 300px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: flex-end;
     transition: transform 0.3s ease;
-    padding: 3rem;
+    padding: 1rem;
 }
 .project-card:hover {
     transform: scale(1.03);
@@ -324,10 +307,6 @@ img.zoom:hover {
     background-color: #143f43;
     transform: scale(1.1);
 }
-.description {
-    display: none;
-    transition: all 0.3s ease;
-}
 .timeline-section {
     background-color: #0d1117;
     display: flex;
@@ -341,7 +320,7 @@ img.zoom:hover {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 0.6rem 0;
 }
 .timeline::after {
     content: '';
@@ -357,7 +336,7 @@ img.zoom:hover {
     background: rgba(0, 255, 255, 0.1);
     border: 1px solid rgba(0, 255, 255, 0.3);
     border-radius: 10rem;
-    padding: 1rem 1rem;
+    padding: 0.3rem 0.3rem;
     position: relative;
     width: 70%;
     box-sizing: border-box;
@@ -376,21 +355,21 @@ img.zoom:hover {
 }
 .timeline-item.left {
     left: -20%;
-    text-align: right;
-    padding-right: 3rem;
-    border-radius: 10%;
 }
-.timeline-item.right {
+.timeline-item.right{
     right: -50%;
+}
+.timeline-item.right, .timeline-item.left{
+
     text-align: right;
-    padding-left: 3rem;
+    padding-left: 0.3rem;
     border-radius: 10%;
 }
 .timeline-content {
     background-color: rgba(0, 255, 255, 0.1);
     border: 2px solid rgba(0, 255, 255, 0.3);
     border-radius: 10%;
-    padding: 2rem;
+    padding: 1rem;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
     position: relative;
@@ -542,7 +521,6 @@ section {
     }
     #work_experience section {
         width: 70%;
-        max-width: 150px;
     }
     .timeline {
         max-width: 600px;
@@ -585,11 +563,12 @@ section {
     }
     #work_experience section, 
     #work_experience .timeline-item {
-      padding: 0.2rem 0.2rem!important;   /* smaller padding */
-      width: 50% !important;             /* narrower width */
-      max-width: none !important;        /* remove max-width restriction */
-      font-size: 0.8rem !important;      /* smaller text */
-      line-height: 1 !important;       /* tighter line height */
+      padding: 0.2rem 0.2rem!important;  
+      width: 50% !important;           
+      max-width: none !important;        
+      font-size: 0.8rem !important;    
+      line-height: 1 !important;    
+
     }
     .timeline-item.left {
         left: 0%;
@@ -597,7 +576,9 @@ section {
         padding-right: 3rem;
         border-radius: 10%;
     }
-    
+    .timeline-content{
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
     .education {
         grid-template-columns: 1fr;
         margin: 0 1rem;
@@ -659,7 +640,6 @@ section {
     color: #777;
     margin-bottom: 8px;
   }
-  
   .btn {
     padding: 10px 20px;
     font-size: 16px;
@@ -672,23 +652,19 @@ section {
     cursor: pointer;
     box-sizing: border-box;
   }
-  
   .btn-primary {
     background-color: #007bff;
     color: white;
     border: none;
   }
-  
   .btn-primary:hover {
     background-color: #0056b3;
   }
-  
   .btn-secondary {
     background-color: #6c757d;
     color: white;
     border: none;
   }
-  
   .btn-secondary:hover {
     background-color: #545b62;
   }
